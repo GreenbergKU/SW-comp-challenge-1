@@ -1,7 +1,7 @@
 ---
-name: greenbergKU's PR TEMPLATE
-about: project Feature
-title: GENERAL PULL REQUEST TEMPLATE
+name: Sue's Pull Request TEMPLATE
+project: STATIC COMP no. 1
+title: STATIC COMP PULL REQUEST TEMPLATE
 labels: ''
 assignees: ''
 
@@ -54,9 +54,7 @@ PULL REQUEST TEMPLATE
 #### Additional Comments
 ***Add any other context or screenshots about the feature request here.***
 ---
-[Turing HTML Style Guide]:(https://github.com/turingschool-examples/html)
-[Turing JS Style Guide]:(https://github.com/turingschool-examples/javascript)
-[Turing CSS Style Guide]:(//github.com/turingschool-examples/css)-
+
 * 
 * 
 * 
