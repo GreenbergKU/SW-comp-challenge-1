@@ -1,0 +1,98 @@
+WORKFLOW FOR RESPONSIVE WEBSITE
+posted by instructor Scott in slack channel
+
+1) add viewport meta tag to head of html document
+2) consider your main user 
+   a. Mobile first? Then set your breakpoints for max width, beginning with the smallest screen size, and moving up
+   b. Desktop fist? set breakpoints for min width, and work your way down from xxl sizes
+3) Write your global styles
+4) Add your media queries, and their breakpoints, and include the styles to apply for those sizes within the media query
+5) As you are styling, make use of the chrome device toolbar in your dev tools to see how your site looks on various screens
+6) pat yrself on the back for considering users on all devices!
+
+
+
+LAYOUT TYPES
+
+Responsive
+(LIQUIDADAPSIVE)
+Responsive is characterized by having defined layouts for different resolutions. Within each layout, the design is liquid and resizes the width of elements relative to the changing window size.
+You can think of Responsive as a series of Liquid layouts.
+
+Static
+(LIQUIDADAPSIVE)
+Static layouts are the traditional web: one design that sits in the center of the page and requires horizontal scrolling if the window is too small for it. M dot sites are the traditional answer to this, providing a wholly separate site for a lower resolution - and all the work of creating a separate site.
+- Old School, doesn’t change, hard code, pixels, length and width
+
+Liquid
+(LIQUIDADAPSIVE)
+Liquid (also called "Fluid") is characterized by scaling the width of parts of the design relative to the window. It tends to fail when the window is much smaller or much larger than it was originally designed for.
+- relative sizes ( %, m, vh, vw ),
+(CLASS NOTES)
+Liquid Page Layout
+	•	A liquid (also called ‘fluid’) page layout uses relative units instead of fixed units (think percentages instead of pixels).
+	•	Liquid layouts fill the whole page, regardless of the screen or browser width. It’s an approach that doesn’t take as much thought and planning as other techniques, making it quick and easy to implement. However, this ease of implementation comes with major disadvantages. These layouts fail at screen sizes significantly larger or smaller than the original design.
+
+ADAPTIVE layouts
+(LIQUIDADAPSIVE)
+Adaptive is characterized by having defined layouts for different resolutions. Within each layout, resizing the window does not change the layout.
+You can think of Adaptive as a series of Static
+-media queries
+(CLASS NOTES)
+	•	An adaptive layout uses CSS media queries to detect the width of the browser and make layout adjustments accordingly. Unlike liquid layouts, adaptive layouts use fixed units like pixels to define widths. They behave like a series of static layouts defined by specific media queries.
+	•	Because adaptive layouts typically take less time to build than true responsive layouts, they are a great option for quickly updating an existing static layout to make it compatible with mobile devices.
+	•	The primary drawback to this strategy is that screen widths that fall between the set breakpoints can feel awkward, with contents looking either too crowded or with far too much space.
+
+MEDIA QUERIES AND BREAKPOINTS
+
+There are several different media types (all, screen, print, speech), but for our purposes we’ll primarily use screen. This indicates that the media query is intended for computer screens.
+
+Breakpoints refer to the widths the media queries reference. When the media query is true (i.e. when the screen size matches what is specified by the break point), the styles specified in that media query will be applied. It may seem natural to set breakpoints for certain devices; it’s actually best practice to choose a breakpoint when the layout of content needs to change.
+
+<code pen example> So between 40 & 55, we see that default powder blue
+
+NORMALIZE.CSS
+https://yuilibrary.com/yui/docs/cssnormalize/
+
+LINK STYLESHEET FROM HTML - (2) ways, both explained below:
+
+1. Include Dependencies
+
+To use Normalize.css, include the following source file in your web page:
+
+```HTML
+
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css">
+
+``` 
+-or-
+
+Global vs. Contextual
+
+CSS Files such as Normalize.css contain styles that apply globally to all native HTML elements. Sometimes, pulling them into your existing projects can break layout. For these cases, consider using the contextual cssnormalize-context.css. This version selects HTML elements only when they descend from the .yui3-normalized classname.
+
+2. Here is how to include the contextual version of CSS Base:
+
+```HTML
+
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize-context/cssnormalize-context-min.css">
+
+```
+
+EXAMPLE:
+
+- Using Contextual Normalize.css
+The following code snippet show how you might apply Normalize.css to one of two columns:
+
+            ```HTML
+
+            <div>
+                <div id="left-column" class="yui3-normalized"><h1>Lorem Ipsum</h1></div>
+                <div id="right-column"><h1>Lorem Ipsum</h1></div>
+            </div>
+
+            ```
+
+
+ADD NOTE:
+This guide explains the use-cases behind Normalize, how it varies from CSSReset and CSSBase, and how to use it as a foundation for your new projects. For more information, check out this great guide by Nicolas Gallagher.
