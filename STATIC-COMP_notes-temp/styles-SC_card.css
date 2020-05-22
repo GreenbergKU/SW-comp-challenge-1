@@ -1,0 +1,348 @@
+/** CARD : <body class="full-body"> **/
+html {
+    height: 200px;
+    width: 170px;
+}
+
+/* *********** CODE PEN STATIC LAYOUT ************* */
+/* 
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;  
+} */
+
+/* body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;  
+} */
+
+.header {
+    height: 20vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+  }
+  
+  .title {
+    height: 7vh;
+    width: 100vw;
+    background-color: white;
+  }
+  
+  .home {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+  }
+  /********  CSS  ********/
+  /*****  SECTIONS  *******/
+  .section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  /**  COLUMN SETUP **/
+  
+  .col {
+    display: block;
+    float: left;
+    margin: .7% .7% .7% .7%;
+    border: .1px black solid;
+  }
+  
+  .col:first-child {
+    margin-left: 0;
+  }
+  
+
+  /***** GROUPING ***/
+  .group:before,
+  .group:after {
+    content: "";
+    display: table;
+  }
+  
+  .group:after {
+    clear: both;
+  }
+  
+  .group {
+    zoom: 1;
+    /*** For IE 6/7 ***/
+  }
+  
+  /****************/
+  /*** GRID OF FOUR ****/
+  /********************/
+  
+  .span_4_of_4 {
+    width: 100%;
+  }
+  
+  .span_3_of_4 {
+    width: 74.3%;
+  }
+  
+  .span_2_of_4 {
+    width: 49%.3;
+  }
+  
+  .span_1_of_4 {
+    width: 23.3%;
+  }
+  
+  /****** GO FULL WIDTH BELOW 480 PIXELS *****/
+  
+  @media only screen and (max-width: 480px) {
+    
+    .col {
+      margin: 1% 0 1% 0%;
+    }
+  
+    .span_1_of_4,
+    .span_2_of_4,
+    .span_3_of_4,
+    .span_4_of_4 {
+      width: 100%;
+    }
+  }
+  
+
+/******CODE PEN STATIC LAYOUT*********/
+
+
+/******* FULL-CARD (a) BELOW ********/
+/* full-card-html {  
+  height: 200px;    
+} */
+
+
+/**full-card-body */
+
+.full-card {
+    display: grid;
+    height: 100%;
+    width: 170px;
+}
+
+
+h1 {
+    display: grid;
+    margin: 1%;
+    justify-content: left;
+    border: cyan .5px solid;
+    font-size: 10px;
+
+}
+
+/******* FULL-CARD (a) ********/
+
+/*** FULL-CARD grid SECTION-class */
+.a {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    /* background-color: purple; */
+    border: purple 10px solid;
+    height: 100%;
+
+}
+
+.b {
+    /* for my visibility  */
+  border: white .5px solid;
+}
+
+/******* CARD-TOP ********/
+
+/*** CARD-TOP grid SECTION-id */
+#a1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    /* padding: 1%; */
+    height: 100%;   
+    /* for my visibility  */
+    /* border: grey .5pt solid; */
+    background-color: purple;
+    color: white;
+    /* border-bottom: white 5px solid; */
+}
+ /* #c7c1c1; */
+
+ /** <STYLE A1> CARD-TOP inner-grid-SECTION-class */
+.f {
+  
+    display: inline-flex;
+    height: 100%;
+    /* margin-top: 5%;
+    margin-bottom: 0; */
+    /* height: 100%; */
+  /*  justify-self: right; */
+  
+}  
+.c {
+    display: flex;
+    /* justify-self: center; */
+    /* justify-content: left; */
+    /* height: 100%; */
+} 
+
+/**HERe*/
+
+/** <STYLE><a1:c, a1:f> CARD-TOP inner-SECTIONS */
+
+
+.one {
+  box-sizing: border-box;
+  width: 60%;
+  margin: 4%;
+  border: .2px cyan solid;
+}
+
+p {
+    margin: 0;
+    padding-top: 15%;
+    padding-bottom: 0;
+    height: 30%;
+}
+.fill-1 {
+    width: 40%;
+}
+
+.fill-2 {
+    width: 70%;
+}
+
+.two {
+  box-sizing: border-box;
+  width: 30%;
+  margin: 2%;
+  border: .2px cyan solid;
+
+  height: 100%;
+}
+
+/* .three {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 2px black solid;
+  box-sizing: border-box;
+  margin-top: 2px;
+}   */
+
+
+
+
+/******* CARD-BOTTOM ********/
+
+/*** CARD-BOTTOM grid SECTION-id (#a2)*/
+
+#a2 {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    /* padding: 2%; */
+    height: 100%;
+
+     /* for my visibility  */
+    background-color: grey;
+    
+    color: white;
+    border: white 1px solid;
+    border-top: white 10px solid; 
+}
+
+/* <STYLE A2> CARD-BOTTOM inner-grid-SECTION-class */
+.g, .h, .j, .k {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-top; 5x; */
+    /* margin-bottom; 5px; */
+    height: 100%;
+}
+
+.g {
+    display: flex;
+ 
+}
+
+/**** CARD-BOTTOM inner-sections */
+
+/* #b4, #b5, #b6 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
+
+/** <STYLE><a2:k> CARD-BOTTOM inner-SECTIONS /*
+
+/*
+.seven {
+    width: 25%;
+    padding: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right: 10px;
+    margin-left: 0px;
+    align-self: center;
+    justify-self: left;
+    border: black 2px solid;
+}
+
+.eight {
+    padding: 25px;
+    width: 70%;
+    justify-self: right;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 10px;
+    margin-right: 0px;
+    align-self: center;
+    border: black 2px solid;
+}
+*/
+
+
+
+/* /* *** NO 3rd FULL CARD SECTION ***
+    - MOVED (.k) to 2nd SECTION (a2)
+    - <section class="b k t"> is now a2:row4
+
+.k {
+    display: flex;
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+} 
+*/
+
+
+
+/* /**** NO 3rd FULL-CARD SEC *******
+#a3 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+ 
+    background-color: grey;
+    border: black 1pt solid; 
+    color: grey;
+} */
+
+
+/* **** DOES NOT EXIST ******/
+/* .d {
+    justify-content: right;
+    display: flex;
+}  */
+/**/
+
+/***** hold NO VALUE  ********
+.m, .n, .p, .r, .s, .t {
+
+} 
+*/
