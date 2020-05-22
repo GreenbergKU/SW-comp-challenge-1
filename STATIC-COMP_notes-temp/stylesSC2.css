@@ -1,0 +1,251 @@
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .header {
+    height: 20vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+  }
+  
+  .title {
+    height: 7vh;
+    width: 100vw;
+    background-color: white;
+  }
+  
+  .home {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+  }
+  /****************  CSS  ****************/
+  /*************  SECTIONS  ************/
+  .section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  /**********  COLUMN SETUP  ***********/
+  
+  .col {
+    display: block;
+    float: left;
+    margin: .7% .7% .7% .7%;
+    border: .1px black solid;
+  }
+  
+  .col:first-child {
+  /*   margin: 1; */
+     
+  }
+  
+  /*************  CARDS  ****************/
+  
+  /******** FILLER CARD **********/
+  /* .full-card {
+    border: 3px solid white;
+    padding: 1px;
+    margin: 5px;
+    background-color: navy;
+    color: grey;
+  } */
+  
+  
+  /********** was html origonally */
+  /* html {
+      height: 200px;
+      width: 170px;
+  } */
+  /* ********* FONT CARDS */
+  h1 {
+      display: grid;
+      margin: 1%;
+      justify-content: left;
+      border: cyan .5px solid;
+      font-size: 10px;
+  }
+  
+  /******* FULL-CARD (a) ********/
+  
+  /********** was body origonally */
+  
+  .full-card {
+      display: grid;
+  /*     height: 100%; */
+      width: 100%;
+   /*changed height from 100% to 200px*/
+      height: 300px;
+  }
+  
+  
+  /*** FULL-CARD grid SECTION-class */
+  .a {
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+      /* background-color: purple; */
+      border: purple 8px solid;
+      height: 75%;
+  }
+  
+  .b {
+      /* for my visibility  */
+    border: white .5px solid;
+  }
+  
+  /******* CARD-TOP ********/
+  
+  /*** CARD-TOP grid SECTION-id */
+  #a1 {
+      display: grid;
+      grid-template-rows: auto auto;
+      /* padding: 1%; */
+      height: 100%;   
+      /* for my visibility  */
+      /* border: grey .5pt solid; */
+      background-color: purple;
+      color: white;
+      /* border-bottom: white 5px solid; */
+  }
+   /* #c7c1c1; */
+  
+   /** <STYLE A1> CARD-TOP inner-grid-SECTION-class */
+  .f {
+    
+      display: inline-flex;
+      height: 100%;
+      /* margin-top: 5%;
+      margin-bottom: 0; */
+      height: 100%;
+    /*  justify-self: right; */
+    
+  }  
+  .c {
+      display: flex;
+      /* justify-self: center; */
+      /* justify-content: left; */
+      /* height: 100%; */
+  } 
+  
+  /******* CARD-BOTTOM ********/
+  
+  /*** CARD-BOTTOM grid SECTION-id (#a2)*/
+  
+  #a2 {
+      box-sizing: border-box;
+      display: grid;
+      grid-template-rows: auto auto auto auto;
+      /* padding: 2%; */
+      height: 100%;
+  
+       /* for my visibility  */
+      background-color: grey;
+  /*     border: black 1px solid; */
+      color: white;
+      border: white 1px solid;
+      border-top: white 10px solid; 
+  }
+  
+  /* <STYLE A2> CARD-BOTTOM inner-grid-SECTION-class */
+  .g, .h, .j, .k {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      /* margin-top; 5x; */
+      /* margin-bottom; 5px; */
+      height: 100%;
+  }
+  
+  
+  .one {
+    box-sizing: border-box;
+    width: 60%;
+  /*   margin: %; */
+    border: .2px cyan solid;
+  }
+  
+  h2 {
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+  
+  p {
+      margin: 5%;
+  /*    padding-bottom: 0;  */
+  }
+  .fill-1 {
+      width: 40%;
+  }
+  
+  .fill-2 {
+      width: 75%;
+  }
+  
+  .two {
+    box-sizing: border-box;
+    width: 25%;
+    
+    border: .2px cyan solid;
+  
+    height: 100%;
+  }
+  
+  
+  /**************  GROUPING  *￼************/
+  .group:before,
+  .group:after {
+    content: "";
+    display: table;
+  }
+  
+  .group:after {
+    clear: both;
+  }
+  
+  .group {
+    zoom: 1;
+    /*** For IE 6/7 ***/
+  }
+  
+  /**********************************************/
+  /**************  GRID OF FOUR  **************/
+  /**********************************************/
+  
+  .span_4_of_4 {
+    width: 100%;
+  }
+  
+  .span_3_of_4 {
+    width: 74.3%;
+  }
+  
+  .span_2_of_4 {
+    width: 49%.3;
+  }
+  
+  .span_1_of_4 {
+    width: 23.3%;
+  }
+  
+  /****** GO FULL WIDTH BELOW 480 PIXELS *****/
+  
+  @media only screen and (max-width: 480px) {
+    
+    .col {
+      margin: 1% 0 1% 0%;
+    }
+  
+    .span_1_of_4,
+    .span_2_of_4,
+    .span_3_of_4,
+    .span_4_of_4 {
+      width: 100%;
+    }
+  }
+  
