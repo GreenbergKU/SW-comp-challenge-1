@@ -1,25 +1,25 @@
-
 body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;  
   }
-  
-  .header {
+
+section {
+    box-sizing: border-box;
+}
+
+.header {
   height: 20vh;
-  width: 100vw;
   background-color: black;
   color: white;
   }
   
   .title {
   height: 7vh;
-  width: 100vw;
   background-color: white;
   }
   
   .home {
-  width: 100%;
   background-color: grey;
   padding: 1%;
   }
@@ -27,7 +27,7 @@ body {
   .hidden {
   display: none;
   }
-  /************  CSS SECTIONS  *********/
+  /************  CSS SECTIONS *********/
   
   .section {
   clear: both;
@@ -47,7 +47,7 @@ body {
   .col:first-child {
   margin-left: 0%;
   }
-  /************ GROUPING *￼**********/
+  /************ GROUPING ********/
   
   .group:before,
   .group:after {
@@ -234,7 +234,7 @@ body {
   .span_2_of_4 {}
   .span_3_of_4 {}
   .span_4_of_4 {} {
-    width: 100%;
+    width: 49.5%;
   }
   } 
   */
@@ -252,10 +252,13 @@ body {
     .span_3_of_4,
     .span_4_of_4 {
       width: 100%;
+      height: 360px;
     }
+
     .header {
       height: 30vh;
     }
+
     .nav-menu {
       display: inline-flex;
     }
