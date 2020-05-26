@@ -1,323 +1,302 @@
-<!-- /*********** HTML ************/ -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-        <!-- GLOBALLY linked SS bellow -->
         <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
-                <!-- normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css -->
-                <!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css">    -->
-            <!-- CONTEXT linked SS bellow (gallagher/yahooapis is the same file) -->
-                <!-- <link rel='stylesheet' type='text/css' href='./styles.normalize_gallagher-neal.css'> -->  <!--cssnormalize-context-min files downloaded and copied into my own file-->
-                <!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize-context/cssnormalize-context-min.css"> -->
-            
+        <link rel="stylesheet" type="text/css" href="./styles.css">            
         <title>SW STATIC COMP 1</title>
     </head>  
     <body>
         <section class="header">
-            <section class="nav-menu hidden">
-                <div class="nav-button-container">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Aires.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Pices.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Aquarius.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Capricorn.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Sagittarius.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Scorpio.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Libra.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Virgo.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Leo.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Cancer.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Gemini.png" alt="Submit">
-                    <input type="image" src="./assets/HOROSCOPES/circles/Taurus.png" alt="Submit">
+            <section class="nav-buttons header-section">
+                <button class="nav-button heart-compatible-btn">
+                    <img src="./assets/red_heart.png" alt="red-heart-arrow" id="nav-icon"> 
+                    <h5 class="nav-text">Compatibility</h5>
+                </button>
+                <button class="nav-button numerology-btn">
+                    <img src="./assets/numerology_icon.png" alt="numerology" id="nav-icon">
+                    <h5 class="nav-text">Numerology</h5>               
+                </button>
+                <button class="nav-button heart-compatible-btn">
+                    <img src="./assets/tomorrow.png" alt="sun-moon-purple" id="nav-icon">
+                    <h5 class="nav-text">Tomorrow's Horoscope</h5>               
+                </button>
+            </section>
+            <section class="profile header-section">
+                <button class="profile-button">
+                    <div class="profile-icon">
+                        <img class="profile-img" src="./assets/profile.png" alt="profile-gray" id="icon">
+                        <p class="profile-text">Profile</p>
+                        <img class="profile-arrow-icon" src="./assets/profile_down-20x20px.png" alt="arrow-hamburger-icon" id="icon">
+                    </div>
+                </button>        
+                <div class="logo header-section">
+                    <img class="website-logo" src="./assets/purple_circle_icon.png" alt="purple-zodiak-wheel" id="icon">
                 </div>
             </section>
         </section>
-
-
-        <section class="title"><span>TITLE</span></section>
         <section class="home" alt="HOME">     
-            
             <div class="section row row1 group">
-
-                <div class="col span_1_of_4" alt="row:col" id="r1c1">
+                <div class="col span_1_of_4" alt="1-11" id="r1c1" name="Aires">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Aires</h3></div>
+                                    <div class='two'>
+                                        <img src="./assets/HOROSCOPES/symbols/aires.png" alt="aires symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>      
+                                    <div class='fill-1'><h4>March 21 - April 19</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>Use your creative talent in order to accomplish your goals. Your mind will be wandering to exotic destinations. Arguing won't help.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                           
                 </div>
-                <div class="col span_1_of_4" alt="row:col" id="r1c2">
+                <div class="col span_1_of_4" alt="2-12" id="r1c2" name="Pisces">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Pisces</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/pisces.png" alt="pisces symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>Feb 19 – March 20</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>Consider submitting some of your written work for publication.  Go have some fun, but if whatever it is, stops being fun, just walk away.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                
                 </div>
-                <div class="col span_1_of_4" alt="row:col" id="r1c3">
+                <div class="col span_1_of_4" alt="3-13" id="r1c3" name="Aquarius">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Aquarius</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/aquarius.png" alt="aquarius symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>Jan 20 – Feb 18</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>Ultimatums rarely have the desired effect on a situation (more likely to  backfire). If uncertainty emerges, take some time to reevaluate.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
-                            </section>   
-                        </section>          
-                    </main>                           
-                </div>
-                <div class="col span_1_of_4" alt="row:col" id="r1c4">                       
-                    <main class="full-card"> 
-                        <section class="a">   
-                            <section id="a1">
-                                <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
-                                </section>
-                                <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
-                                </section>
-                            </section>    
-                            <section id="a2">   
-                                <section class="b g p"></section>
-                                <section class="b h r"></section>
-                                <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>
                 </div>
-
-            </div>
-
-            <div class="section row row2 group">
-
-                <div class="col span_1_of_4" alt="row:col" id="r2c1">
+                <div class="col span_1_of_4" alt="4-14" id="r1c4" name="Capricorn">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Capricorn</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/capricorn.png" alt="capricorn symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>Dec 22–Jan 19</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>Spend some time with the family.  Take advantage of the opportunities that exist. A need to express yourself may come out in creative ways.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
+                            </section>   
+                        </section>          
+                    </main>
+                </div>
+            </div>
+            <div class="section row row2 group">
+                <div class="col span_1_of_4" alt="5-21" id="r2c1" name="Sagittarius">
+                    <main class="full-card"> 
+                        <section class="a">   
+                            <section id="a1">
+                                <section class="b c m">
+                                    <div class='fill-2'><h3>Sagittarius</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/sagittarius.png" alt="sagittarius symbol"></div>
+                                </section>
+                                <section class="b f n">
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>Nov 22 – Dec 21</h4></div>
+                                </section>
+                            </section>    
+                            <section id="a2">   
+                                <section class="b g p"></section>
+                                <section class="b h r"><p>Be cautious of false information. Secret affairs may be brought out in the open. Find out if they have other commitments.</p></section>
+                                <section class="b j s"></section>
                             </section>   
                         </section>          
                     </main>                           
                 </div>                
-                <div class="col span_1_of_4" alt="row:col" id="r2c2">
+                <div class="col span_1_of_4" alt="6-22" id="r2c2" name="Scorpio">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Scorpio</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/scorpio.png" alt="scorpio symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>Oct 23 – Nov 21</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p> A few personal changes could bring about greater social activity. Just be your natural self and try to stay cautiously optimistic.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                
                 </div>
-                <div class="col span_1_of_4" alt="row:col" id="r2c3">
+                <div class="col span_1_of_4" alt="7-23" id="r2c3" name="Libra">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Libra</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/libra.png" alt="libra symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>Sept 23 – Oct 22</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>You have the determination to succeed.  If you go outside your comfort zone and begin networking, who knows what you’ll find.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                           
                 </div>
-                <div class="col span_1_of_4" alt="row:col" id="r2c4">
+                <div class="col span_1_of_4" alt="8-24" id="r2c4" name="Virgo">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Virgo</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/virgo.png" alt="virgo symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>Aug 23 – Sept 22</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>Call someone you haven't seen in a long time. You can take advantage of opportunities if you are quick to make a move.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                       
                 </div>
-
             </div>
-
             <div class="section row row3 group">
-
-                <div class="col span_1_of_4" alt="row:col" id="r3c1">
+                <div class="col span_1_of_4" alt="9-31" id="r3c1" name="Leo">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Leo</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/leo.png" alt="leo symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>July 23 – Aug 22</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>If purchases and/or expenses are adding up, but need to stay social, consider getting involved in groups that do outdoor, physical activities.</p> </section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                           
                 </div>                                    
-                <div class="col span_1_of_4" alt="row:col" id="r3c2">
+                <div class="col span_1_of_4" alt="10-32" id="r3c2" name="Cancer">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Cancer</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/cancer.png" alt="cancer symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>June 21 – July 22</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>Stress levels are high so don’t push yourself over the edge by taking on more than you can handle.  If low are funds, think before you buy!</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                
                 </div>
-                <div class="col span_1_of_4" alt="row:col" id="r3c3">
+                <div class="col span_1_of_4" alt="11-33" id="r3c3" name="Gemini">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Gemini</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/gemini.png" alt="gemini symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>May 21 – June 20</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>Your ability to deal with others is your strength.  Use that to get the job done while steering clear of office politics and gossip.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                           
                 </div>
-                <div class="col span_1_of_4" alt="row:col" id="r3c4">
+                <div class="col span_1_of_4" alt="12-34" id="r3c4" name= "Taurus">
                     <main class="full-card"> 
                         <section class="a">   
                             <section id="a1">
                                 <section class="b c m">
-                                    <div class='fill-2'></div>
-                                    <div class='two'><h2>2</h2></div>
+                                    <div class='fill-2'><h3>Taurus</h3></div>
+                                    <div class='two'><img class="symbol" src="./assets/HOROSCOPES/symbols/taurus.png" alt="taurus symbol"></div>
                                 </section>
                                 <section class="b f n">
-                                    <div class='one'><p>Sagitarius</p></div>       
-                                    <div class='fill-1'></div>
+                                    <div class='one'><h5>BIRTHDAY:</h5></div>       
+                                    <div class='fill-1'><h4>April 20 – May 20</h4></div>
                                 </section>
                             </section>    
                             <section id="a2">   
                                 <section class="b g p"></section>
-                                <section class="b h r"></section>
+                                <section class="b h r"><p>If you’ve found yourself in ‘rocky waters’ at home, use this time to strengthen your friendships while you patch things up at home.</p></section>
                                 <section class="b j s"></section>
-                                <section class="b k t"></section> 
                             </section>   
                         </section>          
                     </main>                       
                 </div>
-
             </div>
-
         </section>
     </body>
 </html>

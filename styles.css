@@ -2,38 +2,113 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;  
+    background-color: #B9ADC4;
   }
 
 section {
     box-sizing: border-box;
 }
 
+h6, h5, h4, h3, h2, p {
+    margin: 0;
+}
+
+.nav-text {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+
 .header {
-  height: 20vh;
-  background-color: black;
-  color: white;
-  }
-  
-  .title {
+  height: 50vh;
+  width: 100%;
+  background-color: #B9ADC4;
+  display: flex;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-buttons {
+  width: 50%;
+  height: 40vh;
+}
+
+.profile  {
+  display: grid;
+  width: 50%;
+  height: auto;
+  justify-content: flex-end;
+}
+
+.nav-button, .profile-button, .profile-icon {
+  display: flex;
+  background-color: #331A41;
+  color: #B9ADC4;
+}
+
+.nav-button {
+  width: 70%;
+  height: 13.5vh;
+}
+
+.profile-button {
+  width: auto;
+  height: 50px;
+}
+
+.profile-icon {
+  width: 100%;
+}
+
+.profile-img {
+  width: 75%;
+  height: 75%;
+}
+
+.profile-arrow-icon {
+  height: 35%;
+  width: 35%;
+  padding-top: 5%;
+}
+
+.profile-text b{
+  margin: 0%;
+}
+
+.logo {
+  display: grid;
+  justify-content: flex-end;
+}
+
+.website-logo {
+  border: 3px #331A41 solid;
+  width: fit-content;
+  height: fit-content;
+}
+
+.title {
   height: 7vh;
-  background-color: white;
-  }
+}
   
-  .home {
-  background-color: grey;
-  padding: 1%;
-  }
+.home {
+  background-color: #331A41 ;
+  padding: 0%;
+}
   
-  .hidden {
+.hidden {
   display: none;
-  }
-  /************  CSS SECTIONS *********/
+}
+
+/************  div SECTIONS *********/
   
-  .section {
+.section {
   clear: both;
   padding: 0px;
   margin: 0px;
-  }
+}
   
   /**********  COLUMN SETUP  ***********/
   
@@ -41,7 +116,6 @@ section {
   display: block;
   float: left;
   margin: 1% 0% 1% 1%;
-  /* border: .1px black solid; */
   }
   
   .col:first-child {
@@ -61,7 +135,6 @@ section {
   
   .group {
   zoom: 1;
-  /** For IE 6/7 **/
   }
   
   
@@ -95,158 +168,130 @@ section {
   border: cyan .5px solid;
   }
   
-  /******* FULL-CARD (a) ********/
-  /** full-card was body before merged */
+  h2 {
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+    
+p {
+  margin: 5%;
+  padding: 1%;
+  text-align: center;
+}
+  /******* FULL-CARD ********/
   
   .full-card {
   display: grid;
   width: 100%;
-  height: 300px;
-  /* changed height from 100% to 200px*/
-  /* height: 100%; */
+  height: auto;
   }
-  
-  /*** FULL-CARD grid SECTION-class */
-  
+ 
   .a {
   display: grid;
   grid-template-rows: 1fr 2fr;  
-  height: 100%;
-  border: purple 3px solid;   
-  /* background-color: purple; */
+  width: 95%;
+  height: 300px;
+  border: #AE6A1F 3px solid;  
   }
-  
-  .b {
-  /* for my visibility  */
-  border: white .5px solid;
-  }
-  
+    
   /******* CARD-TOP ********/
-  
-  /*** CARD-TOP grid SECTION-id ***/
   
   #a1 {
   display: grid;
-  grid-template-rows: 2fr 1fr;  
+  grid-template-rows: 3fr 2fr;  
   height: 100%;   
-  background-color: purple;
-  color: white;
-  /* border-bottom: white 5px solid; */
-  /* padding: 1%; */    
-  /* border: grey .5pt solid; */    
-  /* for my visibility  */
+  background-color: #331A41;
+  color: #D4D2D6 ;
   }
   
-  /** <STYLE A1> CARD-TOP inner-grid-SECTION-class */
-  
   .f {  
-  display: inline-flex;
-  height: 100%;
-  height: 100%;
-  /*justify-self: right; */    
-  /*margin-top: 5%;
-  margin-bottom: 0; */
+  display: grid;
+  background-color: #331A41;
+  margin-top: 3px;
   }
   
   .c {
-  display: flex;
-  /* justify-self: center; */
-  /* justify-content: left; */
-  /* height: 100%; */
+  display: inline-flex;
+  background-color: #331A41;
+  height: 60px;
   } 
   
   /******* CARD-BOTTOM ********/
-  
-  /*** CARD-BOTTOM grid SECTION-id (#a2)*/
-  
+
   #a2 {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  height: 100%;      
-  background-color: grey;
-  color: white;
-  border: white 1px solid;
-  border-top: white 10px solid;     
-    /* padding: 2%; */
-    /* for my visibility  */
-    /* border: black 1px solid; */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    height: 100%;      
+    background-color: #71627B;
+    color: #D4D2D6;
+    border-top: #AE6A1F 15px solid;     
   }
-  
-  /* <STYLE A2> CARD-BOTTOM inner-grid-SECTION-class */
-  
+    
   .g, .h, .j, .k {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 100%;    
-  /* margin-top; 5x; */
-  /* margin-bottom; 5px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;    
   }
   
   .one {
-  box-sizing: border-box;
-  width: 60%;
-  /* margin: %; */
-  border: .2px cyan solid;
-  }
-  
-  h2 {
-  padding-top: 0;
-  padding-bottom: 5px;
-  }
-  
-  p {
-  margin: 5%;
-  /* padding-bottom: 0; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
   }
   
   .fill-1 {
-  width: 40%;
+    display: grid;
+    justify-content: end;
+    width: 100%;
+    height: 50%;
   }
   
   .fill-2 {
-  width: 75%;
+    width: 60%;
   }
   
   .two {
-  box-sizing: border-box;
-  width: 25%;  
-  height: 100%;  
-  border: .2px cyan solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+    width: 40%;  
+    height: 100%; 
   }
   
-  .row {
-  border: cyan 2px dotted;
-  /* FOR MY VISIBILITY */
-  }
+  /**************** @MEDIA *****************/
   
+@media only screen and (max-width: 775px) {
   
-  
-  /****** GO FULL WIDTH BELOW 480 PIXELS *****/
-  /* THIS WORKS BUT NEEDS TWEEKING
-  
-  /* @media only screen and (max-width: 600px) {
   .col {
     margin: 1% 0 1% 0%;
   }
-  .span_1_of_4 {}
-  .span_2_of_4 {}
-  .span_3_of_4 {}
-  .span_4_of_4 {} {
+  
+  .span_4_of_4 {
+    width: 100%;
+  }
+  
+  .span_3_of_4 {
     width: 49.5%;
   }
-  } 
-  */
   
-  /****** GO FULL WIDTH BELOW 480 PIXELS *****/
+  .span_2_of_4 {
+    width: 100%;
+  }
   
+  .span_1_of_4 {
+    width: 49.5%;
+  }
+}  
+
+
   @media only screen and (max-width: 480px) {
     
     .col {
       margin: 1% 0 1% 0%;
     }
-  
+
     .span_1_of_4,
     .span_2_of_4,
     .span_3_of_4,
@@ -255,8 +300,28 @@ section {
       height: 360px;
     }
 
+    .c {
+      display: flex;
+    }
+
+    .f {
+      display: flex;
+    }
+
+    .one {
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    .fill-1 {
+      justify-content: flex-end;
+      width: 50%;
+      height: 100%;
+    }
+
     .header {
-      height: 30vh;
+      height: 60vh;
+      width: 98%;    
     }
 
     .nav-menu {
@@ -264,13 +329,19 @@ section {
     }
   
     input {
-      /* border: .5px white solid; */
       border-radius: 50%;
-      height: 40px;
-      width: 40px;
-      /* FOR MY VISIBILITY */
+      height: 60px;
+      width: 60px;
+      padding: 10px;
+      margin: 5px;
     }
+
+    .nav-button {
+      width: 90%;
+    }
+
+    .nav-text {
+      padding: 3%;
+      margin: 1%;
+    }    
   }
-  
-  
-  
