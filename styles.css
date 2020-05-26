@@ -20,9 +20,9 @@ h6, h5, h4, h3, h2, p {
 }
 
 .header {
-  height: 50vh;
+  height: 45vh;
   width: 100%;
-  background-color: #B9ADC4;
+  background-color: #331A41;
   display: flex;
 }
 
@@ -41,6 +41,7 @@ button {
   width: 50%;
   height: auto;
   justify-content: flex-end;
+  padding-right: 1%;
 }
 
 .nav-button, .profile-button, .profile-icon {
@@ -84,9 +85,8 @@ button {
 }
 
 .website-logo {
+  box-sizing: border-box;
   border: 3px #331A41 solid;
-  width: fit-content;
-  height: fit-content;
 }
 
 .title {
